@@ -3,6 +3,8 @@ project "ImGuizmo"
     language "C++"
     cppdialect "C++23"
     staticruntime "off"
+    
+    multiprocessorcompile "On"
 
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
