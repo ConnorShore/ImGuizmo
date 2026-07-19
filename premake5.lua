@@ -34,6 +34,12 @@ project "ImGuizmo"
         defines "EB_RELEASE"
         runtime "Release"
         optimize "on"
+    
+    filter "configurations:Profile"
+        defines "EB_PROFILE"
+        runtime "Release"
+        optimize "on"
+        symbols "on"
         
     filter "configurations:Dist"
         runtime "Release"
